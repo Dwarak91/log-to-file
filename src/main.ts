@@ -5,7 +5,7 @@ async function run(): Promise<void> {
   try {
     const fileName: string = core.getInput('fileName')
     const logData: string = core.getInput('logData')
-    core.info(`Appending logs to existing file if created already or create and write data. Fileame: ${fileName}`)
+    core.info(`Appending logs to existing file if created already (or) create and write data. Fileame: ${fileName}`)
 
     fs.writeFileSync(fileName, new Date().toTimeString().concat('\n'), {flag: 'a+',})
     fs.writeFileSync(fileName, logData.concat('\n'), {flag: 'a+',})
