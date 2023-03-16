@@ -44,6 +44,9 @@ jobs:
             exit 1
           fi
         id: diff
+      
+      - name: Publish action 
+        uses: actions-on-packages/package-action@0.4.1
 
       # If index.js was different than expected, upload the expected version as an artifact
       - uses: actions/upload-artifact@v3
