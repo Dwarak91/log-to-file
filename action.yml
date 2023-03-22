@@ -1,4 +1,5 @@
 name: 'log-to-file'
+description: Log to file action
 author: 'dwarak91'
 branding:
   icon: file-text
